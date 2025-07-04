@@ -1,0 +1,54 @@
+@import "tailwindcss";
+*{
+  font-family: monospace;
+}
+.a{
+  width: max-content;
+  cursor: pointer;
+  position: relative;
+  text-decoration: none;
+}
+.a::after{
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  height: 2px;
+  width: 100%;
+  left: 0;
+  background-color: #f0eaea;
+  transition: 0.3s;
+  transition-timing-function: ease-in-out;
+  transform: scaleX(0);
+}
+.a:hover::after{
+   transform: scaleX(1);
+}
+.typing-container {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid white; /* Cursor */
+  font-family: monospace;
+  /* font-size: 1.2rem; */
+  width: 0ch;
+  animation:
+    typing 3s steps(13, end)  forwards,
+    blink 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0ch;
+  }
+  to {
+    width: 13ch; /* Match character count of your text */
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+
