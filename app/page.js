@@ -6,12 +6,14 @@ export default function Home() {
     <>
       <div className="flex gap-20 mt-20 flex-col md:flex-row justify-center items-center p-4">
         {/* Image */}
-        <img
-          className="bg-amber-950 h-40 w-40 md:h-110 md:w-110 cursor-pointer m-6 hover:scale-110 transition-transform duration-300 ease-in-out rounded-full object-cover hover:border-4 hover:border-amber-400"
-          src="MYself.jpg"
-          alt="profile"
-        />
-
+       <div className="relative w-60 h-60 md:w-[28rem] md:h-[28rem] m-6">
+  <div className="absolute inset-0 rounded-full bg-gray-200 blur-2xl opacity-60 scale-110 z-0"></div>
+  <img
+    className="relative z-10 h-full w-full cursor-pointer hover:scale-110 transition-transform duration-300 ease-in-out rounded-full object-cover "
+    src="MYself.jpg"
+    alt="profile"
+  />
+</div>
         {/* Text Section */}
         <div className="text-white p-4 max-w-xl text-center md:text-left">
           {/* BlurText + Title */}
@@ -22,7 +24,7 @@ export default function Home() {
             direction="top"
             className="text-3xl md:text-6xl"
           />
-          <div className="text-3xl md:text-6xl typing-container text-blue-600 mt-2">
+          <div className="text-3xl textcolor md:text-6xl typing-container text-blue-600 mt-2">
             Web Developer
           </div>
 

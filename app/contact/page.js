@@ -92,7 +92,7 @@ export default function ContactForm() {
         <button
           type="submit"
           disabled={loading}
-          className={`w-full p-2 text-white rounded transition ${
+          className={`w-full bgcolor p-2 text-white rounded transition ${
             loading ? 'bg-gray-400 cursor-not-allowed' : 'bg-blue-600 hover:bg-blue-700'
           }`}
         >
