@@ -24,7 +24,7 @@ export default function Home() {
             direction="top"
             className="text-3xl md:text-6xl"
           />
-          <div className="text-3xl textcolor md:text-6xl typing-container text-blue-600 mt-2">
+          <div className="text-3xl textcolors md:text-6xl typing-container text-blue-600 mt-2">
             Web Developer
           </div>
 

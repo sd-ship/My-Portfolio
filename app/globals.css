@@ -15,7 +15,7 @@
   height: 2px;
   width: 100%;
   left: 0;
-  background-color: #f0eaea;
+  background-color: #39D4DF;
   transition: 0.3s;
   transition-timing-function: ease-in-out;
   transform: scaleX(0);
@@ -47,7 +47,10 @@
 .bgcolor{
   background-color: #39D4DF;
 }
-.textcolor{
+.textcolor:hover{
+  color: #39D4DF;
+}
+.textcolors{
   color: #39D4DF;
 }
 .icon {

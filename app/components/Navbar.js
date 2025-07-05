@@ -35,7 +35,7 @@ const Navbar = () => {
     <nav>
       <div className="flex items-center justify-between mx-auto p-4">
         {/* Logo */}
-        <Link href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
+        <Link href="/" className="textcolor flex items-center space-x-3 rtl:space-x-reverse">
           <span className="self-center text-5xl hover:scale-110 transition-transform ease-in-out duration-75 font-semibold whitespace-nowrap dark:text-white">
             Portfolio
           </span>
@@ -87,22 +87,22 @@ const Navbar = () => {
         <div className="hidden md:block md:w-auto">
           <ul className="flex md:text-2xl items-center flex-row font-medium space-x-8">
             <li className='flex '>
-              <Link href="/" className="text-white hover:text-blue-500">
+              <Link href="/" className="a text-white textcolor">
                Home
               </Link>
             </li>
             <li>
-              <Link href="/about" className="text-white hover:text-blue-400">
+              <Link href="/about" className="a text-white textcolor">
                 About
               </Link>
             </li>
             <li>
-              <Link href="/projects" className="text-white hover:text-blue-400">
+              <Link href="/projects" className="a text-white textcolor">
                 Projects
               </Link>
             </li>
             <li>
-              <Link href="/contact" className="text-white hover:text-blue-400">
+              <Link href="/contact" className="a text-white textcolor">
                 Contact
               </Link>
             </li>
