@@ -4,24 +4,65 @@ import Link from 'next/link';
 
 const page = () => {
     return (
-        <div className="mt-20 flex justify-center  ">
-            <Link
-                href="https://to-do-app-gules-one.vercel.app/"
-                className="max-w-sm rounded-2xl shadow-lg overflow-hidden hover:scale-105 transition-transform duration-300"
-            >
-                <div className="p-4   rounded-xl transition-all duration-300 ease-in-out hover:bg-gray-600 hover:scale-105">
+        <div className="m-10 flex justify-center items-center  gap-6 flex-wrap">
+            <div className='rounded-2xl bg-gray-700'>
+                <div className="md:max-w-2/4  hover:bg-gray-600 hover:scale-110 rounded-2xl shadow-lg overflow-hidden transition-transform duration-300 group relative">
                     <Image
                         src="/todo.png"
                         alt="To-Do App Preview"
                         width={700}
                         height={400}
-                        className="rounded-lg"
+                        className="rounded-lg w-full"
                     />
-                    <p className="text-center mt-2 text-blue-600 hover:underline">Visit To-Do App</p>
-                </div>
-            </Link>
 
-             
+                    <div className="absolute bottom-0 right-0 flex items-center justify-center  bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <Link
+                            href="https://to-do-app-gules-one.vercel.app/"
+                            className="px-4 text-3xl py-2 bgcolor text-white rounded-md "
+                        >
+                            🔗
+                        </Link>
+                    </div>
+                    <div className='md:hidden mt-5 w-full text-center'>
+                        <Link
+                            href="https://to-do-app-gules-one.vercel.app/"
+                            className="px-4 text-center  py-2 bg-gray-500 text-white rounded-md "
+                        >
+                            Visit To Do App
+                        </Link>
+                    </div>
+                </div>
+
+            </div>
+
+            <div className='rounded-2xl mt-10 bg-gray-700'>
+                <div className="md:max-w-2/4 hover:bg-gray-600 hover:scale-110 rounded-2xl shadow-lg overflow-hidden transition-transform duration-300 group relative">
+                    <Image
+                        src="/JariRooms.png"
+                        alt="To-Do App Preview"
+                        width={700}
+                        height={400}
+                        className="rounded-lg w-full"
+                    />
+
+                    <div className="absolute bottom-0 right-0 flex items-center justify-center  bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <Link
+                            href="https://jari-rooms-dhiraj-birajdar.vercel.app/"
+                            className="px-4 text-3xl py-2 bgcolor text-white rounded-md "
+                        >
+                            🔗
+                        </Link>
+                    </div>
+                    <div className='md:hidden mt-5 w-full text-center'>
+                        <Link
+                            href="https://jari-rooms-dhiraj-birajdar.vercel.app/"
+                            className="px-4 text-center  py-2 bg-gray-500 text-white rounded-md "
+                        >
+                            Visit Jari Rooms App
+                        </Link>
+                    </div>
+                </div>
+            </div>
         </div>
     );
 };
