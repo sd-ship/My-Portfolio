@@ -5,8 +5,8 @@ import Link from 'next/link';
 const page = () => {
     return (
         <div className="m-10 flex justify-center items-center  gap-6 flex-wrap">
-            <div className='rounded-2xl bg-gray-700'>
-                <div className="md:max-w-2/4  hover:bg-gray-600 hover:scale-110 rounded-2xl shadow-lg overflow-hidden transition-transform duration-300 group relative">
+            <div className='rounded-2xl '>
+                <div className=" hover:bg-gray-600 hover:scale-110 rounded-2xl shadow-lg overflow-hidden transition-transform duration-300 group relative">
                     <Image
                         src="/todo.png"
                         alt="To-Do App Preview"
@@ -35,8 +35,8 @@ const page = () => {
 
             </div>
 
-            <div className='rounded-2xl mt-10 bg-gray-700'>
-                <div className="md:max-w-2/4 hover:bg-gray-600 hover:scale-110 rounded-2xl shadow-lg overflow-hidden transition-transform duration-300 group relative">
+            <div className='rounded-2xl mt-10'>
+                <div className=" hover:bg-gray-600 hover:scale-110 rounded-2xl shadow-lg overflow-hidden transition-transform duration-300 group relative">
                     <Image
                         src="/JariRooms.png"
                         alt="To-Do App Preview"
